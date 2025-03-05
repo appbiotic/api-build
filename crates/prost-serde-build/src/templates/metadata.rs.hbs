@@ -1,0 +1,7 @@
+use appbiotic::api::protogen_spec::ProtoPackageSpec;
+use std::sync::OnceLock;
+
+pub fn proto_package_spec() -&gt; &amp;static ProtoPackageSpec {
+    static PROTO_PACKAGE_SPEC: OnceLock&lt;ProtoPackageSpec&gt; = OnceLock::new();
+    PROTO_PACKAGE_SPEC.get_or_init(|| serde_json::from_str(include!(concat!(env!("OUT_DIR"), "/_proto_package_spec.json"))).unwrap())
+}

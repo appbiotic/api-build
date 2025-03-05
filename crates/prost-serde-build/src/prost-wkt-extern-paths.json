@@ -1,0 +1,30 @@
+[
+    {
+        "proto_path": ".google.protobuf.Any",
+        "rust_path": "::prost_wkt_types::Any"
+    },
+    {
+        "proto_path": ".google.protobuf.Duration",
+        "rust_path": "::prost_wkt_types::Duration"
+    },
+    {
+        "proto_path": ".google.protobuf.FieldMask",
+        "rust_path": "::prost_wkt_types::FieldMask"
+    },
+    {
+        "proto_path": ".google.protobuf.ListValue",
+        "rust_path": "::prost_wkt_types::ListValue"
+    },
+    {
+        "proto_path": ".google.protobuf.Struct",
+        "rust_path": "::prost_wkt_types::Struct"
+    },
+    {
+        "proto_path": ".google.protobuf.Timestamp",
+        "rust_path": "::prost_wkt_types::Timestamp"
+    },
+    {
+        "proto_path": ".google.protobuf.Value",
+        "rust_path": "::prost_wkt_types::Value"
+    }
+]

@@ -1,0 +1,20 @@
+[package]
+name = "appbiotic-api-rust-build"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "appbiotic-api-rust-build"
+path = "src/main.rs"
+
+[dependencies]
+appbiotic-api-protogen-spec = { workspace = true }
+anyhow = "1.0.97"
+cargo_toml = "0.21.0"
+clap = { version = "4.5.31", features = ["cargo", "derive"] }
+fluent-uri = { version = "0.3.2", features = ["serde"] }
+handlebars = "6.3.1"
+serde = { version = "1.0.218", features = ["std", "derive"] }
+serde_json = { version = "1.0.140", features = ["std"] }
+tempfile = "3.17.1"
+toml = "0.8.20"

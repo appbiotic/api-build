@@ -1,0 +1,7 @@
+[package]
+name = "appbiotic-api-protogen-spec"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = { version = "1.0.218", features = ["std", "derive"] }
