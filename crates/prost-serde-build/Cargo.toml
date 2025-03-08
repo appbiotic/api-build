@@ -9,7 +9,7 @@ appbiotic-api-protogen-spec = { workspace = true }
 derive-new = "0.7.0"
 handlebars = "6.3.1"
 heck = "0.5.0"
-prost-build = "0.13.5"
+prost-build = { version = "0.13.5", features = ["cleanup-markdown", "format"] }
 prost-types = "0.13.5"
 prost-wkt-build = "0.6.0"
 serde = { version = "1.0.218", features = ["std", "derive"] }
