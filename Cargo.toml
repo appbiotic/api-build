@@ -5,6 +5,7 @@ members = [
     "crates/rust-build",
     "crates/prost-serde-build",
     "crates/protogen-spec",
+    "crates/api",
 ]
 
 [workspace.dependencies]
