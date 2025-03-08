@@ -140,10 +140,12 @@ pub fn build(
             .iter()
             .flat_map(|x| x.files.iter().map(|x| x.to_string_lossy().to_string())),
     );
-    descriptor.file.retain(|f| retain_files.contains(f.name()) && rust_package.proto_package_name.eq(f.name()));
+    descriptor.file.retain(|f| {
+        retain_files.contains(f.name()) && rust_package.proto_package_name.eq(f.name())
+    });
 
     let root_rust_path = format!("{}::prost_serde", rust_package.name.to_lower_camel_case());
-    
+
     let mut types: VecDeque<ProtoType> = VecDeque::new();
     for file in &descriptor.file {
         for msg in &file.message_type {
