@@ -141,7 +141,7 @@ pub fn build(
             .flat_map(|x| x.files.iter().map(|x| x.to_string_lossy().to_string())),
     );
     descriptor.file.retain(|f| {
-        retain_files.contains(f.name()) && rust_package.proto_package_name.eq(f.name())
+        retain_files.contains(f.name()) && rust_package.proto_package_name.eq(f.package())
     });
 
     let root_rust_path = format!("{}::prost_serde", rust_package.name.to_lower_camel_case());

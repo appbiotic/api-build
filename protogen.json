@@ -1,0 +1,19 @@
+{
+    "rust": [
+        {
+            "name": "appbiotic-prost-serde-build-examples",
+            "version": "0.1.0",
+            "path": "crates/prost-serde-build-examples",
+            "proto_package_name": "appbiotic.prost_serde_build.examples",
+            "compile_well_known_protos": true,
+            "protos": [
+                {
+                    "dir": "../../protos",
+                    "files": [
+                        "appbiotic/prost_serde_build/examples/examples.proto"
+                    ]
+                }
+            ]
+        }
+    ]
+}

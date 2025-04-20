@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package appbiotic.prost_serde_build.examples;
+
+import "google/protobuf/any.proto";
+
+message Container {
+    optional int64 id = 1;
+    repeated int64 ints = 2;
+    optional google.protobuf.Any config = 3;
+}
+
+message ContainerConfig {
+    optional string name = 1;
+}

@@ -4,14 +4,14 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-anyhow = "1.0.97"
-appbiotic-api-protogen-spec = { workspace = true }
+anyhow = "1.0.98"
+appbiotic-api-protogen-spec = { path = "../protogen-spec" }
 derive-new = "0.7.0"
-handlebars = "6.3.1"
+handlebars = "6.3.2"
 heck = "0.5.0"
 prost-build = { version = "0.13.5", features = ["cleanup-markdown", "format"] }
 prost-types = "0.13.5"
 prost-wkt-build = "0.6.0"
-serde = { version = "1.0.218", features = ["std", "derive"] }
+serde = { version = "1.0.219", features = ["std", "derive"] }
 serde_json = { version = "1.0.140", features = ["std"] }
-tonic-build = "0.12.3"
+tonic-build = "0.13.0"

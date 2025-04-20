@@ -1,14 +1,4 @@
 [workspace]
 resolver = "2"
 
-members = [
-    "crates/rust-build",
-    "crates/prost-serde-build",
-    "crates/protogen-spec",
-    "crates/api",
-]
-
-[workspace.dependencies]
-appbiotic-api-protogen-spec = { path = "crates/protogen-spec" }
-appbiotic-api-rust-build = { path = "crates/rust-build" }
-appbiotic-api-prost-serde-build = { path = "crates/prost-serde-build" }
+members = ["crates/*"]
